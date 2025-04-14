@@ -1,0 +1,268 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  background-image: url('../images/particles-bg.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: rgba(17, 17, 17, 0.85);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+main {
+  padding: 10px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.games {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.games img {
+  width: 270px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: rgba(17, 17, 17, 0.85);
+  color: #aaa;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  backdrop-filter: blur(6px);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.contact-info p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pc-configurations {
+  padding: 20px;
+  text-align: center;
+}
+
+.pc-configurations h2 {
+  text-align: center;
+}
+
+.config-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.config-item {
+  background-color: #2a2a3a;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.config-item:hover {
+  transform: scale(1.05);
+}
+
+.config-item img {
+  width: 230px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.config-item p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.config-item .specs {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.config-item .price {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.game-category {
+  margin-top: 70px;
+  padding: 0 40px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: hidden;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding: 10px 20px;
+}
+
+.game-card {
+  min-width: 270px;
+  flex-shrink: 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  background-color: #2a2a3a;
+  padding: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.game-card img {
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  pointer-events: auto;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+
+.game-card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.news-section {
+  margin-top: 60px;
+}
+
+.news-section h2 {
+  text-align: center;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.news-item {
+  background-color: #2a2a3a;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.news-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-item h3 {
+  margin: 15px;
+  font-size: 18px;
+}
+
+.news-item p {
+  margin: 0 15px 15px;
+  font-size: 14px;
+}
+
+.about-section {
+  margin-top: 60px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
