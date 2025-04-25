@@ -268,7 +268,7 @@ footer {
 }
 
 /* Адаптація для екранів шириною до 1024px (планшети) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
   .carousel-track {
     gap: 10px;
     padding: 5px 10px;
