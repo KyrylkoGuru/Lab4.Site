@@ -266,3 +266,60 @@ footer {
   line-height: 1.6;
   margin-bottom: 15px;
 }
+
+/* Адаптація для екранів шириною до 1024px (планшети) */
+@media screen and (max-width: 1024px) {
+  .carousel-track {
+    gap: 10px;
+    padding: 5px 10px;
+  }
+
+  .game-card {
+    min-width: 220px;
+  }
+
+  .config-item img {
+    width: 200px;
+  }
+
+  .news-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* Адаптація для екранів до 768px (мобільні телефони) */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .games img {
+    width: 90%;
+  }
+
+  .carousel-track {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-card {
+    width: 90%;
+    min-width: unset;
+  }
+
+  .config-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .news-container {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}
